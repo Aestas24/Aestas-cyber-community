@@ -98,24 +98,25 @@ width: 94%;
 
 </style>
 
-<form
-action="https://formspree.io/f/mbjqolkg"
-method="POST"
->
-
 <table> 
     <td>
         
         <div class="column">
-        <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-            <label for="lname">Country </label> 
+          <form method="post" autocomplete="off" name="google-sheet">
+        <label for="fname">Name<span style="color:red;">*</span></label>
+        <input type="text" id="fname" name="Name" placeholder="Your name.." required>
+
+        <label for="lname"> Gender <span style="color:red;">*</span></label>
+          <input type="radio"  name="Gender" value="male" required>male
+          <input type="radio"  name="Gender" value="female"  required>female
+          <input type="radio"  name="Gender" value="female"  required>other
+         <br>
+         <br> 
+            <label for="lname">Country<span style="color:red;">*</span> </label> 
         
-            <select type="text" id="country" name="country" placeholder="country.." required>
-                <option value="Afganistan">Afghanistan</option>
+            <select type="text" id="country" name="Country" placeholder="country.." required>
+              <option value="India">India</option>
+              <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
    <option value="Algeria">Algeria</option>
    <option value="American Samoa">American Samoa</option>
@@ -364,28 +365,49 @@ method="POST"
 </select>
                 
                 
-        <label for="email"> Your email:</label>
-        <input type="email" id="email" name=" Your Email" placeholder="Your email.." required>
-     <label for="phone"> Your phone number: </label> 
-                <input type="phone" id="phone number" name=" your phone number" placeholder="Your phone number.." required>
-          <label for="lname">Purchase..</label> 
-            <select type="text" id="purchase" name="purchase.." placeholder="purchase.." required>
-                <option value="₹299">₹299</option>
+        <label for="email"> Your email:<span style="color:red;">*</span></label>
+        <input type="email" id="email" name="Your Email" placeholder="Your email.." required>
+     <label for="phone"> Your phone number: <span style="color:red;">*</span></label> 
+                <input type="phone" id="phone number" name=" Your phone number" placeholder="Your phone number.." required>
+          <label for="lname">Purchase.<span style="color:red;">*</span></label> 
+            <select type="text" id="purchase" name="Purchase" placeholder="purchase.." required>
+                
+                    
+          
+              <option value="₹299">₹299</option>
                 <option value="₹499">₹499</option>
                 <option value="₹999">₹999</option>
                <option value="₹1999">₹1,999</option>
                <option value="₹4999">₹4,999</option>
-  </select>
+   
+            </select>
             
-        <label for="subject">Tell us about your website </label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <label for="subject">Tell us about your website <span style="color:red;">*</span></label>
+        <textarea id="subject" name="Message" placeholder="Write something.." style="height:170px" required></textarea>
             
         <input type="submit" value="Submit">
             </td>
             </table>
       </form>
+
+      <script>
+                
+
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzGEVRnSi7_b8-X2ET_FazsVqxsS-AwHBaNK6JZkzMMOTH9Czv9xfH0I1u0Mm5_tYk4/exec'
+                        const form = document.forms['google-sheet']
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => alert("Your form has been successfully submitted. now you can leave the page..."))
+                            .catch(error => console.error('Error!', error.message))
+                     
+                        })
+                      
+                              </script>
     </div>
   </div>
 </div>
    
+  
     

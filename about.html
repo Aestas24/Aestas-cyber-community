@@ -39,18 +39,23 @@ input[type=submit] {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
   textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
   textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -58,6 +63,8 @@ and (max-width : 320px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
   textarea { border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* iPads (landscape) ----------- */
@@ -66,6 +73,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
   textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* iPads (portrait) ----------- */
@@ -74,18 +83,24 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
   textarea {height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
   textarea { height:170px; width: 500px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-  textarea {height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
+  textarea {height: 170px; width: 500px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 /* iPhone 4 ----------- */
@@ -93,6 +108,8 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
   textarea { height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height: 20px; border-radius: 10px; border: 2px solid grey; }
+
 }
 
 </style>
@@ -112,8 +129,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 <h1> Feedback</h1>
 <h5> Your feedback will save on our database as stranger. </h5>
 <form method="post" autocomplete="off" name="google-sheet">
+<input type="name" name="name" placeholder="Your Name....." required> 
+<br> <br>
+<input type="email" name="email" placeholder="Your Email....." required>
+<br><br>
 <textarea name="feedback" placeholder="Your Feedback....." required></textarea>
-<br>
+<br><br>
 <input type="submit"  name="Continue" value="Submit">  
 </form>
 

@@ -304,8 +304,6 @@ letter-spacing:3px;
 .footer .social-icons a {
 	width: 32px;
 	height: 32px;
-	color: #fff;
-	background-color: #aaa;
 	text-align: center;
 	display: inline-block;
 	line-height: 33px;
@@ -313,9 +311,7 @@ letter-spacing:3px;
 	font-size: 13px;
 	transition: all 0.5s;
 }
-.footer .social-icons a:hover {
-	background-color: #30d5c7;
-}
+
 
 /* Sub Footer Style */
 .sub-footer {

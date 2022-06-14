@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
+/* Normal desktop :1200px. */
+/* Normal desktop :992px. */
+/* Tablet desktop :768px. */
+/* small mobile :320px. */
+/* Large Mobile :480px. */
+/* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
+/* line 5, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
+body {
+  font-family: "Muli", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
+.img {
+  max-width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+
+/* line 1, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_bg_1 {
+  background-image: url(../assets/img/sankalpimg/banner.png);
+}
+
+
+/* line 8, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider {
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 16, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .shap_pattern {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+}
+
+/* line 21, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links {
+  position: absolute;
+  right: 100px;
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+@media (max-width: 767px) {
+  /* line 21, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .social_links {
+    display: none;
+  }
+}
+
+/* line 31, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* line 34, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* line 47, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li a::before {
+  background: #615cfd;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #615cfd 0%, #d465ef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #615cfd 0%, #d465ef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615cfd', endColorstr='#d465ef',GradientType=0 );
+  /* IE6-9 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 64, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li a:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 69, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 74, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../assets/img/sankalpimg/man.png);
+  width: 724px;
+  height: 767px;
+  content: '';
+}
+
+@media (max-width: 767px) {
+  /* line 74, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider::before {
+    width: 314px;
+    height: 300px;
+    content: '';
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 74, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider::before {
+    width: 370px;
+    height: 370px;
+    content: '';
+    background-size: cover;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  /* line 96, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider::after {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 96, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider::after {
+    width: 320px;
+    height: 320px;
+    content: '';
+    z-index: -2;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 8, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: 620px;
+  }
+}
+
+/* line 122, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .phone_thumb {
+  position: relative;
+  top: 110px;
+}
+
+@media (max-width: 767px) {
+  /* line 122, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .phone_thumb {
+    top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 128, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .phone_thumb img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 128, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .phone_thumb img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 128, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .phone_thumb img {
+    width: 100%;
+  }
+}
+
+/* line 141, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 {
+  color: #FFF;
+  font-family: "Muli", sans-serif;
+  font-size: 80px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 82px;
+  margin-bottom: 9px;
+}
+
+@media (max-width: 767px) {
+  /* line 149, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 149, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 br {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 149, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 br {
+    display: none;
+  }
+}
+
+/* line 160, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 span {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  /* line 141, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 141, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 141, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: 55px;
+  }
+}
+
+/* line 180, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 186, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text span::before {
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 2px;
+  content: '';
+  left: -67px;
+  top: 50%;
+  margin-bottom: -1px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 180, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 180, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 16px;
+  }
+}
+
+/* line 203, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text .video_service_btn > a {
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 203, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text .video_service_btn > a {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* about area start here */
+
+/* line 1, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me {
+  padding-top: 75px;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  /* line 1, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+  .about_me {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 1, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+  .about_me {
+    padding-bottom: 100px;
+  }
+}
+
+/* line 12, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_large_title {
+  font-weight: 800;
+  color: #F5F6F7;
+  font-size: 235px;
+  position: absolute;
+  left: 21%;
+  top: 0;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  /* line 21, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+  .about_me .about_e_details {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 25, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_e_details h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #001D38;
+}
+
+/* line 30, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_e_details p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+/* line 43, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_img {
+  position: relative;
+}
+
+/* line 45, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_img .color_pattern {
+  position: absolute;
+  right: -80px;
+  top: -123px;
+  z-index: -1;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 45, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+  .about_me .about_img .color_pattern {
+    right: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 45, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+  .about_me .about_img .color_pattern {
+    right: 0;
+  }
+}
+
+/* line 58, ../../sankalp/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+.about_me .about_img .my_Pic img {
+  width: 100%;
+}
+
+
+/* footer start */
+.footer-basic {
+  padding:40px 0;
+  background-color:#111;
+  color:#fff;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
